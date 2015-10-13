@@ -17,7 +17,7 @@ use Yii;
  * @property integer $Activo
  * @property integer $ResetPassword
  *
- * @property Rol $idRol
+ * @property Rol $Rol
  */
 class Usuario extends \yii\db\ActiveRecord
 {
@@ -65,7 +65,7 @@ class Usuario extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getIdRol()
+    public function getRol()
     {
         return $this->hasOne(Rol::className(), ['Id' => 'IdRol']);
     }
